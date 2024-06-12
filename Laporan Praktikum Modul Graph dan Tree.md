@@ -6,7 +6,7 @@
 ### Graph
 Graf atau graph adalah struktur data yang digunakan untuk merepresentasikan
 hubungan antara objek dalam bentuk node atau vertex dan sambungan antara node
-tersebut dalam bentuk sisi atau edge.
+tersebut dalam bentuk sisi atau edge. Salah satu masalah umum yang dapat diselesaikan dengan menggunakan teori graf yaitu Masalah Lintasan Terpendek (Shortest Path   Problem/SPP) yang mencari lintasan dengan jumlah bobot paling minimum [1]. 
 
 ### Tree atau Pohon
 Dalam ilmu komputer, pohon/tree adalah struktur data yang sangat umum dan kuat
@@ -1008,7 +1008,19 @@ void tampilPohon() {
     cout << endl;
 }
 ```
-Fungsi
+Fungsi tampilPohon digunakan untuk memanggil ketiga traversal dan menampilkan hasilnya.
+
+**Cope 10**
+```C++
+int main(){
+    inisialisasi();
+    simpulAkar();
+    tambahSimpul();
+    tampilPohon();
+    return 0;
+}
+```
+Fungsi main menjalankan inisialisasi, membuat simpul akar, menambahkan simpul, dan menampilkan traversal pohon.
 
 #### Output:
 ```C++
@@ -1042,7 +1054,7 @@ Pre-order: 2 1 4 7 3 2 3 6 4 5 5 7 2 2 9 1 3 2 9 5 6 1 6 4 5
 In-order: 3 7 2 4 6 3 4 1 7 5 2 5 9 2 1 2 5 9 6 2 1 3 4 6 5
 Post-order: 3 2 7 6 4 3 4 7 2 5 9 1 2 5 1 5 6 9 1 2 4 5 6 3 2
 ```
-menampilakan hasil faktorial dari bilangan bulat positif 6 dengan rekursif tidak langsung
+menampilkan tree dengan pre-order, in-order, dan post-order.
 
 #### Full code Screenshot:
 ![alt text](https://github.com/MikhaelSetiaBudi/Praktikum-Algoritma-Struktur-Data-Modul-10-Graph-dan-Tree/blob/master/Modul%2010%20Alstrukdat/Code%20Unguided%202%20Graph%20dan%20Tree.png?raw=true)
@@ -1051,8 +1063,10 @@ menampilakan hasil faktorial dari bilangan bulat positif 6 dengan rekursif tidak
 ![alt text](https://github.com/MikhaelSetiaBudi/Praktikum-Algoritma-Struktur-Data-Modul-10-Graph-dan-Tree/blob/master/Output%20Modul%2010%20Alstrukdat/Output%20Unguided%202%20Graph%20dan%20Tree.png?raw=true)
 
 ## Kesimpulan
-Rekursif merupakan salah satu proses pengulangan fungsi atau prosedur yang memanggil dirinya sendiri. Kode rekursif cenderung lebih singkat dan lebih mudah dibuat dibandingkan dengan kode iteratif. Biasanya, perulangan dapat diubah menjadi fungsi rekursif saat proses kompilasi atau interpretasi. Hash table biasanya terdiri dari dua komponen utama: array (atau vektor) dan fungsi hash. Hashing adalah teknik untuk mengubah rentang nilai kunci menjadi rentang indeks array. Sistem hash table bekerja dengan cara mengambil input kunci dan memetakkannya ke nilai indeks array menggunakan fungsi hash. Kemudian, data disimpan pada posisi indeks array yang dihasilkan oleh fungsi hash.
-
+Graf atau graph adalah struktur data yang digunakan untuk merepresentasikan
+hubungan antara objek dalam bentuk node atau vertex dan sambungan antara node
+tersebut dalam bentuk sisi atau edge. Graph dapat digunakan dalam berbagai aplikasi, seperti jaringan sosial, pemetaan
+jalan, dan pemodelan data. pohon/tree adalah struktur data yang sangat umum dan kuat yang menyerupai nyata pohon.
 
 ## Referensi
-[1]	I. F. Putra, M. Syafwan, M. R. Helmi, and A. Nazra, “Bentuk Eksplisit Rumus Beda Maju Dan Beda Mundur Untuk Turunan Ke-N Dengan Orde Ketelitian Ke-N Berdasarkan Deret Taylor,” J. Lebesgue  J. Ilm. Pendidik. Mat. Mat. dan Stat., vol. 4, no. 3, pp. 1675–1686, 2023, doi: 10.46306/lb.v4i3.461.
+[1]	M. Napiah, R. D. Astuti, and M. Mustofa, “Implementasi Algoritma Djikstra Menentukan Jarak Terdekat Jelambar Kampus Stmik Nusa Mandiri Cengkareng,” Akrab Juara  J. Ilmu-ilmu Sos., vol. 7, no. 1, p. 80, 2022, doi: 10.58487/akrabjuara.v7i1.1757.
